@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .Closepanel.container-fluid#CloseMenu(onclick="Closemypanel()").hide
+  #HiddenPanel.hidden-panel.hide
+      span.hidden-panel-close(data-js='hidden-panel-close') Close
+      .hidden-panel-content
+        nav.hidden-panel-nav
+          h3(style='text-align: left;')
+            | NAVIGATION.
+          ul.mt-2.index-menu
+            li
+              .col-12.text-left.mb-4.pt-5
+                a(href='/') login  
+              .col-12.text-left.mb-4.pt-4
+                a(href='/signup') sign up 
+              .col-12.text-left.mb-4.pt-4
+                a(href='/contact') contact
+         
+  main.container-fluid
+    .app-container.container-fluid.p-0
+      .row.main-header
+        .void.col-10
+        .menu-btn.col-2.text-right#MenuIcon
+          button(type="button" data-js='menu-toggle').hamburger.hamburger--minus.menu-toggle
+            span.hamburger-box
+              span.hamburger-inner
+      .welcome-text.container-fluid.pl-0.pr-0.pt-4
+        h4 Signup          
+    .container-fluid.form-parent.p-0.mt-4
+      .form-container.off-canvas.col-xl-6.col-md-6.p-0
+        form.form-signin(role='form' action='auth' method='post')
+          .form-group
+            label(for='EmailAddress') Email Address
+            input#EmailAddress.form-control(type='email' name='EmailAddress' aria-required='true' aria-invalid='true' required='')
+          .form-group
+            label(for='EmailAddress') Password
+            input#password.form-control(type='password' name='password' aria-required='true' aria-invalid='true' required='')
+          .row.hide
+            .checkbox.col-6
+              label
+                input(type='checkbox' value='remember-me')
+                |  Remember me
+            .col-6.text-right
+              a(href="#") Forgot Password?
+          .text-center
+            button.cta(type="submit").text-center
+              span sign up
+          .pt-2
+          span Already own an account?
+            a(href="/").ml-2 Login

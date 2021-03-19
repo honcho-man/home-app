@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('/css/font-awesome.min.css');
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 100vh;
+}
+
+main {
+    min-height: 100%;
+    margin: 0 !important;
+    padding: 15px !important;
+}
+
+img {
+    width: 100%;
+}
+
+.thick {
+    font-weight: 600;
+}
+
+.profile-img-contn {
+    min-height: 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.952);
+    cursor: pointer;
+}
+
+.profile-img-contn img {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: x-large;
+    padding-block-start: 10px !important;
+    cursor: pointer;
+}
+
+.sub-welcome-text {
+    font-size: medium;
+    font-weight: 600;
+    color: #464646;
+}
+
+.hamburger-box {
+    height: 15px !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+    height: 2px !important;
+}
+
+.hamburger-inner {
+    width: 20px !important;
+}
+
+.hamburger-inner::after {
+    width: 25px !important;
+}
+
+.hamburger-inner::before {
+    width: 15px !important;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.medium-small {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+    width: 280px;
+}
+
+.login-form-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.login-text {
+    margin-top: -6px;
+    margin-left: -6px !important;
+}
+
+.margin {
+    margin: 0 !important;
+}
+
+.pointer-events {
+    pointer-events: auto !important;
+}
+
+.input-field>.material-icons {
+    padding-top: 10px;
+}
+
+.input-field div.error {
+    position: relative;
+    top: -1rem;
+    left: 3rem;
+    font-size: 0.8rem;
+    color: #FF4081;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.form-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgb(3, 103, 204);
+    background: radial-gradient(circle, rgba(3, 103, 204, 1) 56%, rgba(135, 193, 152, 1) 99%);
+    width: 90px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #0367cc;
+    background: radial-gradient(circle, rgba(3, 103, 204, 1) 56%, rgba(135, 193, 152, 1) 99%);
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
+}
+
+.eyes {
+    position: absolute;
+    transform: translateY(-27px);
+    right: 0;
+    margin-right: 10px;
+}

@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .Closepanel.container-fluid#CloseMenu(onclick="Closemypanel()").hide
+  #HiddenPanel.hidden-panel.hide
+      span.hidden-panel-close(data-js='hidden-panel-close') Close
+      .hidden-panel-content
+        nav.hidden-panel-nav
+          h3(style='text-align: left;')
+            | NAVIGATION.
+          ul.mt-2
+            li.row
+              .col-1.pt-5.mb-4
+                i.lni.lni-home
+              .col-10.text-left.pt-5.mb-4
+                a(href='/') dashboard  
+              .col-1.mb-4.pt-4
+                i.lni.lni-exit
+              .col-10.text-left.mb-4.pt-4
+                a(href='/logout') logout                           
+         
+  main.container-fluid
+    .app-container.container-fluid.p-0
+      .row.main-header
+        .profile-img.col-2
+          .profile-img-contn
+            img(src="images/user.jpg", alt="User Image" loading="lazy")
+            span.notification-dot
+              i.lni.lni-dot
+        .void.col-8
+        .menu-btn.col-2.text-right#MenuIcon
+          button(type="button" data-js='menu-toggle').hamburger.hamburger--minus.menu-toggle
+            span.hamburger-box
+              span.hamburger-inner
+      .welcome-text.container-fluid.pl-0.pr-0.pt-4
+        h4 Hello, 
+          span.thick #{username}
+        .sub-welcome-text
+        p#logStat #{checkStat}
+        .msg
+      
+    

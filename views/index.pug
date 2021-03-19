@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .Closepanel.container-fluid#CloseMenu(onclick="Closemypanel()").hide
+  #HiddenPanel.hidden-panel.hide
+      span.hidden-panel-close(data-js='hidden-panel-close') Close
+      .hidden-panel-content
+        nav.hidden-panel-nav
+          h3(style='text-align: left;')
+            | NAVIGATION.
+          ul.mt-2.index-menu
+            li
+              .col-12.text-left.mb-4.pt-5
+                a(href='/') home 
+              .col-12.text-left.mb-4.pt-4
+                a(href='/login') login  
+              .col-12.text-left.mb-4.pt-4
+                a(href='/login') sign up 
+              .col-12.text-left.mb-4.pt-4
+                a(href='/contact') contact
+         
+  main.container-fluid
+    .app-container.container-fluid.p-0
+      .row.main-header
+        .void.col-10
+        .menu-btn.col-2.text-right#MenuIcon
+          button(type="button" data-js='menu-toggle').hamburger.hamburger--minus.menu-toggle
+            span.hamburger-box
+              span.hamburger-inner
+      .welcome-text.container-fluid.pl-0.pr-0.pt-4
+        h4 Welcome to omes          

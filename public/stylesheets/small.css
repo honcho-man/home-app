@@ -1,0 +1,10 @@
+@media only screen and (max-width: 800px) {
+    body {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        height: 100vh;
+    }
+    main {
+        padding: 20px !important;
+    }
+}
